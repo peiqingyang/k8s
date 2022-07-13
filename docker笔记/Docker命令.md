@@ -106,3 +106,10 @@ docker save ID > image_name.tar
 cat image_name.tar | docker import - docekr_name:TAG
 docker load -i image_name.tar
 ```
+
+##### 使用mariadb参数
+
+```
+docker run -p 32306:3306  --name mdb -e MARIADB_ROOT_PASSWORD=000000 -d mariadb:latest
+docker exec -it mdb mariadb -uroo
+```

@@ -5,7 +5,7 @@ RabbitMQ
 [root@controller ~]# rabbitmqctl add_user chinaskil chinapd
 Creating user "chinaskil"
 [root@controller ~]# rabbitmqctl set_permissions -p / chinaskil ".*" ".*" ".*"
-[root@controller ~]# rabbitmqctl set_user_tags chinaskil administrator
+[root@controller ~]# rabbrabbitmqctl set_user_tags chinaskil administrator
 Setting tags for user "chinaskil" to [administrator]
 [root@controller ~]# rabbitmqctl list_users
 Listing users
